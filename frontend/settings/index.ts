@@ -1,0 +1,1 @@
+export { isAnimated } from './animation'

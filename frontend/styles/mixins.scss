@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+@mixin layout-2xl {
+	@media (max-width: $media-2xl) {
+		@content;
+	}
+}
+
+@mixin layout-xl {
+	@media (max-width: $media-xl) {
+		@content;
+	}
+}
+
+@mixin layout-lg {
+	@media (max-width: $media-lg) {
+		@content;
+	}
+}
+
+@mixin layout-md {
+	@media (max-width: $media-md) {
+		@content;
+	}
+}
+
+@mixin layout-sm {
+	@media (max-width: $media-sm) {
+		@content;
+	}
+}

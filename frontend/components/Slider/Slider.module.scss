@@ -1,0 +1,50 @@
+.link {
+  font-size: 1rem;
+  color: var(--color-accent-primary);
+}
+
+.nextArrow,
+.prevArrow {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-accent-secondary);
+  border-radius: 50%;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.5rem;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--color-accent-secondary-focused);
+  }
+}
+
+.prevArrow {
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.nextArrow {
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.disabled {
+  display: none;
+}
+
+.lookMoreBtn {
+  padding: 0 12px;
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 1000px;
+    text-transform: none;
+  }
+}

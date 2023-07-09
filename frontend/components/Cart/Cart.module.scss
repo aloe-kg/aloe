@@ -1,0 +1,20 @@
+.cart {
+  width: 500px;
+  height: 100%;
+  background-color: #f7f7f7;
+  overflow-y: auto;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.products {
+  background-color: #fff;
+  padding: 0 0.5rem;
+}

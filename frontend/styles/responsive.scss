@@ -1,0 +1,25 @@
+@import './variables.scss';
+
+@media (max-width: $media-xl) {
+	:root {
+		--products-column-count: 4;
+	}
+}
+
+@media (max-width: $media-lg) {
+	:root {
+		--products-column-count: 3;
+	}
+}
+
+@media (max-width: $media-md) {
+	:root {
+		--products-column-count: 2;
+	}
+}
+
+@media (max-width: $media-sm) {
+	:root {
+		--products-column-count: 1;
+	}
+}

@@ -1,0 +1,9 @@
+{
+  "name": "aloe",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "frontend:dev": "cd frontend/ && yarn next dev",
+    "frontend:build": "cd frontend/ && yarn next build"
+  }
+}

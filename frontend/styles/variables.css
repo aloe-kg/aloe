@@ -1,0 +1,16 @@
+:root {
+  --color-primary: #111;
+  --color-secondary: #3f4e65;
+  --color-accent-primary: #2a9540;
+  --color-accent-secondary: #ff7834;
+  --color-accent-secondary-focused: #f8a361;
+  --color-danger: #ff5252;
+
+  --color-main: #f7f7f7;
+  --color-header: #cecece;
+  --color-navbar: #e6e6e6;
+
+  --color-backdrop: #000000b8;
+
+  --products-column-count: 5;
+}

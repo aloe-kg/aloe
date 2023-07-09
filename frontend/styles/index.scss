@@ -1,0 +1,77 @@
+@use './variables.css';
+
+@import './responsive.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css');
+
+.carousel {
+  height: calc(100% - 27.5px);
+}
+
+.slick-list {
+  height: 100%;
+}
+
+.slick-track {
+  height: 100%;
+  display: flex;
+}
+
+.slick-slide > div {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+ul::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-accent-primary);
+
+  &:hover {
+    background: var(--color-accent-secondary);
+  }
+}
+
+.carouselBanner {
+  .slick-slide > div {
+    display: flex;
+  }
+  .slick-dots {
+    list-style: none;
+    display: flex !important;
+    justify-content: center;
+    margin-top: 1.5rem;
+    z-index: 2;
+
+    .slick-active {
+      button {
+        background-color: #ff7834;
+      }
+    }
+    li {
+      display: flex;
+      button {
+        width: 1rem;
+        height: 1rem;
+        border-radius: 50%;
+        margin-left: 4px;
+        margin-right: 4px;
+        cursor: pointer;
+        background-color: #85858533;
+        font-size: 0;
+        border: none;
+      }
+    }
+  }
+}

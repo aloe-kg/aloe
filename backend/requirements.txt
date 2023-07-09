@@ -1,0 +1,15 @@
+asgiref==3.5.0
+backports.zoneinfo==0.2.1
+Django==4.0.3
+sqlparse==0.4.2
+googletrans==3.1.0a0
+gunicorn
+whitenoise
+djangorestframework
+django-rest-swagger
+psycopg2-binary==2.9.3
+Pillow
+pyyaml
+uritemplate
+drf-spectacular
+django-cors-headers
