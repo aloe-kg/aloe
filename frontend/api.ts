@@ -1,1 +1,1 @@
-export const BASE_URL = 'http://164.90.196.58:8000'
+export const BASE_URL = 'https://aloe-backend-8595e5af7d05.herokuapp.com'

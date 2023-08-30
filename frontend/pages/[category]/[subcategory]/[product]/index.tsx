@@ -32,26 +32,26 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  // const { categories, subcategories } = await loadCategories()
-  // const productsCount = await (await axios(`${BASE_URL}/products/?limit=1`)).data.count
+  const { categories, subcategories } = await loadCategories()
+  const productsCount = await (await axios(`${BASE_URL}/products/?limit=1`)).data.count
 
-  // const fetchedProducts = await (await axios(`${BASE_URL}/products`)).data.results
+  const fetchedProducts = await (await axios(`${BASE_URL}/products`)).data.results
 
-  // const paths = await fetchedProducts.map((product: IProduct) => {
-  //   const category = categories.find((category) => category.id === product?.root_category)?.url_path
+  const paths = await fetchedProducts.map((product: IProduct) => {
+    const category = categories.find((category) => category.id === product?.root_category)?.url_path
 
-  //   const subcategory =
-  //     subcategories.find((subcategory) => subcategory.id === product?.category)?.url_path ||
-  //     'subcategory'
+    const subcategory =
+      subcategories.find((subcategory) => subcategory.id === product?.category)?.url_path ||
+      'subcategory'
 
-  //   return {
-  //     params: {
-  //       category,
-  //       subcategory,
-  //       product: product.id.toString(),
-  //     },
-  //   }
-  // })
+    return {
+      params: {
+        category,
+        subcategory,
+        product: product.id.toString(),
+      },
+    }
+  })
 
   return {
     paths: [],

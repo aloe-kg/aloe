@@ -7,7 +7,7 @@ const nextConfig = {
       'aloe-api.herokuapp.com',
       'aloe.kg',
       'silca.info',
-      '164.90.196.58',
+      'aloe-backend-8595e5af7d05.herokuapp.com',
     ],
   },
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useEffect, useState } from 'react'
 import { IoClose } from 'react-icons/io5'
@@ -24,7 +25,6 @@ export const Cart = () => {
   const cartListArr = Object.entries(cartList).map((el) => ({ id: el[0], amount: el[1] }))
 
   const total = cartListArr.reduce((acc, rec) => {
-    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     const item = products.find((el) => +el.id === +rec.id)!
     return acc + (+item?.price || 0) * rec.amount
   }, 0)

@@ -1,8 +1,9 @@
+import { BASE_URL } from 'api'
 import axios from 'axios'
 import { ICategory } from 'interfaces'
 
 export async function loadCategories() {
-  const data: ICategory[] = await (await axios('http://164.90.196.58:8000/categories')).data
+  const data: ICategory[] = await (await axios(`${BASE_URL}/categories`)).data
 
   const filteredData = data.filter((category) => category.url_path)
 
